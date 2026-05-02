@@ -50,7 +50,7 @@ const Home = () => {
               Comece Seu Devocional
               <ArrowRight size={20} />
             </a>
-            <Link to="/livros/juizes" className="btn btn-outline text-lg px-8 py-4 bg-white">
+            <Link to="/juizes" className="btn btn-outline text-lg px-8 py-4 bg-white">
               Explorar Estudo de Juízes
             </Link>
           </div>

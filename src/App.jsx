@@ -5,10 +5,10 @@ import JudgesPage from './pages/JudgesPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/overbo">
+    <BrowserRouter basename="/livros">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/livros/juizes" element={<JudgesPage />} />
+        <Route path="/juizes" element={<JudgesPage />} />
       </Routes>
     </BrowserRouter>
   );
