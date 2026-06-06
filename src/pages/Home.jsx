@@ -1,28 +1,13 @@
 import React from 'react';
 import { BookOpen, Compass, Shield, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-bg">
-      {/* Header/Nav */}
-      <nav className="bg-white border-b border-border-light sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div className="flex items-center gap-3">
-              <div className="bg-primary-bg p-2 rounded-lg">
-                <BookOpen className="text-primary" size={28} />
-              </div>
-              <span className="font-bold text-2xl text-text-primary tracking-tight">O Verbo é Vivo</span>
-            </div>
-            <div>
-              <a href="https://overbo.agenciamarka.com.br" target="_blank" rel="noreferrer" className="btn btn-outline text-sm px-6 py-2">
-                Acessar o App
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-20 pb-24 overflow-hidden">
@@ -51,7 +36,7 @@ const Home = () => {
               <ArrowRight size={20} />
             </a>
             <Link to="/juizes" className="btn btn-outline text-lg px-8 py-4 bg-white">
-              Explorar Estudo de Juízes
+              Estudar o Livro de Juízes
             </Link>
           </div>
         </div>
@@ -101,16 +86,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer Minimal */}
-      <footer className="bg-bg-dark text-white py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <BookOpen className="text-primary mx-auto mb-4" size={32} />
-          <p className="text-text-muted mb-2">O Verbo é Vivo &copy; {new Date().getFullYear()}</p>
-          <p className="text-sm text-text-secondary font-light max-w-md mx-auto">
-            "A verdadeira paz duradoura não vem da ausência de inimigos, mas da presença da fidelidade ao Senhor."
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };
