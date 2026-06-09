@@ -5,7 +5,7 @@ import JudgesPage from './pages/JudgesPage';
 
 function App() {
   return (
-    <BrowserRouter basename="/livros">
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/juizes" element={<JudgesPage />} />
